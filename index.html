@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 </head>
 <body>
@@ -67,18 +67,18 @@
                 <h2 style="color:#D6CCC7">Watch my free strategy session today!</h2>
                 <br>
 
-                <div class="input-button">
+                <form class="input-button">
 
                     <div class="input-div">
                         <!-- <label for="email"></label>  -->
-                        <input value="Email" type="email" id="email" name="email">
+                        <input placeholder="Email" type="email" id="email1" name="email">
                     </div>
 
                     <div class="button-div">
                         <button type="submit">Get Free Session</button>
                     </div>
 
-                </div>
+                </form>
 
             </div>
 
@@ -229,12 +229,22 @@
             </div>
 
             <!-- sub2-main-part2-end  -->
-
-
-        </div>
+           
         <!-- sub2-main end -->
 
+        <!-- dynamic-card start -->
 
+        <div class="dynamic-card">
+            <div class="add-new-icon">
+                <p>Click On Icon To Add A New Card</p>
+                <span id="plus-icon" class="material-symbols-outlined" onclick="addCard()" >
+                    add_circle
+                </span>
+            </div>
+            
+        </div>
+
+        <!-- dynamic-card end -->
 
         <!-- sub3-main start -->
         <div class="sub3-main">
@@ -585,22 +595,24 @@
             <div class="sub8-part1">
                 <h1>It's Time To <span style="color:#2FA4FF">Grow Your <br>Business</span> - Join The<br> <span style="color: #286EF1;">Free Strategy Session</span> <br>Now!</h1>
             </div>
-            <div class="sub8-part2">
+            <form class="sub8-part2">
 
                     <div class="sub8-input">
                         <!-- <label for="email"></label>  -->
-                        <input value="Email" type="email" id="email" name="email">
+                        <input placeholder="Email" type="email" id="email" name="email">
                     </div>
 
                     <div class="sub8-button">
                         <button type="submit">Get Free Session</button>
                     </div>
-            </div>
+            </form>
         </div>
 
         
 
 
     </div>
+
+    <script src="myScript.js"></script>
 </body>
 </html>
